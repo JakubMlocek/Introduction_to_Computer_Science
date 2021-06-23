@@ -1,0 +1,8 @@
+#program wylicza ostatnia niezerowa cyfre silni
+liczba = int(input())
+pot = 1
+for mnoznik in range(1, liczba+1):
+    pot *= mnoznik
+    while(pot % 10 == 0):
+        pot //= 10
+print(pot % 10)
